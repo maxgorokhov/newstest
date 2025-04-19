@@ -1,0 +1,28 @@
+/*Подключение шрифтов*/
+@font-face {
+    font-family: "OsReg";
+    src: url(../fonts/OpenSansRegular.woff2) format(woff2),
+    url(../fonts/OpenSansRegular.woff) format(woff),
+    url(../fonts/OpenSansRegular.ttf) format(ttf);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "OsSB";
+    src: url(../fonts/OpenSansSemiBold.woff2) format(woff2),
+    url(../fonts/OpenSansRegular.woff) format(woff),
+    url(../fonts/OpenSansSemiBold.ttf) format(ttf);
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "SegReg";
+    src: url(../fonts/SegoeUIRegular.woff2) format(woff2),
+    url(../fonts/SegoeUIRegular.woff) format(woff),
+    url(../fonts/SegoeUIRegular.ttf) format(ttf);
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}

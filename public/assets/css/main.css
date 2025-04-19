@@ -1,0 +1,87 @@
+.page {
+    max-width: 1920px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    padding-left:clamp(2.5rem, 0.073rem + 10.36vw, 12.5rem);
+    padding-right: clamp(2.5rem, 0.073rem + 10.36vw, 12.5rem);
+    padding-top: clamp(1.875rem, 1.723rem + 0.65vw, 2.5rem);
+    padding-bottom: clamp(1.25rem, 0.91rem + 1.45vw, 2.649rem);
+    border-bottom: 1px solid rgb(108, 110, 123);
+    min-height: 100px;
+}
+.main {
+    flex-grow: 1;
+}
+.footer{
+    flex-shrink: 0;
+}
+
+
+/*хэдер*/
+.logo {
+    max-width: 395px;
+    display: flex;
+    gap: 24px;
+    cursor: pointer;
+}
+.logo__svg {
+    flex-shrink: 0;
+    width: 93px;
+    height: 66px;
+}
+.logo__txt{
+    color: rgb(44, 20, 94);
+    font-family: "SegReg";
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 132%;
+    transition: 1s;
+}
+.logo:hover .logo__txt{
+    color: rgb(145, 33, 69);
+}
+@media (max-width: 600px) {
+    .logo {
+        align-items: center;
+    }
+    .logo__txt {
+        font-size: clamp(1.375rem, 1.271rem + 0.44vw, 1.438rem);
+    }
+}
+
+
+/*футер*/
+.footer {
+    padding-top: clamp(1.25rem, 0.583rem + 2.85vw, 4rem);
+    padding-bottom: clamp(1.25rem, 0.279rem + 4.14vw, 5.25rem);
+    margin: 0px  clamp(2.5rem, 0.073rem + 10.36vw, 12.5rem);
+    border-top: 1px solid rgb(0,0,0);
+}
+.footer__text {
+    color: rgb(0, 0, 0);
+    font-family:"OsReg";
+    font-size: clamp(0.875rem, 0.784rem + 0.39vw, 1.25rem);
+    font-weight: 400;
+    line-height: 160%;
+}
+
+/*Странца не найдена */
+
+.notfound{
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notfound__text{
+    text-align: center;
+    font-family: "SegReg";
+    font-weight: 400;
+    font-size: clamp(1.5rem, 1.136rem + 1.55vw, 3rem);
+    color: rgb(0,0,0);
+}

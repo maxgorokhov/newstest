@@ -1,0 +1,191 @@
+
+
+/*Секция со свежей новостью*/
+.last-news{
+    width: 100%;
+    min-height: clamp(18.75rem, 13.501rem + 22.39vw, 40.375rem);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: clamp(1.875rem, 1.511rem + 1.55vw, 3.375rem);
+}
+.last-news__container{
+    padding-left: clamp(2.5rem, 0.073rem + 10.36vw, 12.5rem);
+    padding-right: clamp(2.5rem, 0.073rem + 10.36vw, 12.5rem);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: rgb(255,255,255);
+    margin-bottom: clamp(0rem, -13.125rem + 14.58vw, 4.375rem);
+}
+.last-news__title{
+    font-family: "OsSB";
+    font-size: clamp(1.875rem, 1.359rem + 2.2vw, 4rem);
+    font-weight: 600;
+    line-height: 140%;
+    transition: 1s;
+    @media (max-width: 1600px) {
+        line-height: 110%;
+    }
+}
+.last-news__title ~ p {
+    font-family: "OsReg";
+    font-size: clamp(1rem, 0.757rem + 1.04vw, 2rem);
+    font-weight: 400;
+    line-height: 160%;
+}
+
+/*Секция новостей*/
+.news{
+    padding-left: clamp(2.5rem, 0.073rem + 10.36vw, 12.5rem);
+    padding-right: clamp(2.5rem, 0.073rem + 10.36vw, 12.5rem);
+    margin-bottom: 82px;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.875rem, 1.42rem + 1.94vw, 3.75rem);
+}
+.news__title{
+    color: rgb(0, 0, 0);
+    font-family: 'OsSB';
+    font-size: clamp(1.875rem, 1.359rem + 2.2vw, 4rem);
+    font-weight: 600;
+    line-height: 140%;
+}
+.news__container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 82px;
+    margin-bottom: clamp(0.719rem, 0.544rem + 0.74vw, 1.438rem);
+    @media (max-width: 650px) {
+        row-gap: 40px;
+    }
+
+}
+.news__article{
+    max-width: calc((100% - 40px) / 2);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.938rem, 0.458rem + 1.18vw, 1.875rem);
+    cursor: pointer;
+    @media (max-width: 650px) {
+        max-width: 100%;
+    }
+}
+.news__time{
+    align-self: flex-start;
+    padding: 6px 18px;
+    border-radius: 20px;
+    background: rgb(236, 242, 245);;
+    color: rgb(108, 110, 123);
+    font-family: "OsReg";
+    font-size: clamp(0.625rem, 0.534rem + 0.39vw, 1rem);
+    font-weight: 400;
+    line-height: 22px;
+}
+.news__name{
+    color: rgb(0, 0, 0);
+    font-family: "OsSB";
+    font-size: clamp(1rem, 0.757rem + 1.04vw, 2rem);
+    font-weight: 600;
+    line-height: clamp(1.25rem, 0.886rem + 1.55vw, 2.75rem);
+}
+.news__article:hover .news__name{
+    color: rgb(132, 24, 68);
+}
+.news__announce{
+    color: rgb(0, 0, 0);
+    font-family: 'OsReg';
+    font-size: clamp(0.75rem, 0.629rem + 0.52vw, 1.25rem);
+    font-weight: 400;
+    line-height: 160%;
+    flex-grow: 1;
+}
+.news__link{
+    align-self: flex-start;
+    padding: clamp(0.625rem, 0.433rem + 0.47vw, 1rem) clamp(1.875rem, 1.555rem + 0.79vw, 2.5rem);
+    border: 2px solid rgb(155, 64, 122);
+    border-radius: 50px;
+    color: rgb(132, 24, 68);
+    font-family: "OsSB";
+    font-size: clamp(0.75rem, 0.689rem + 0.26vw, 1rem);
+    font-weight: 600;
+    line-height: 22px;
+    text-transform: uppercase;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.news__link-arrow {
+    fill: rgb(132, 24, 68);
+}
+.news__link:hover {
+    color: rgb(255,255,255);
+    background-color: rgb(132, 24, 68);
+}
+.news__link:hover .news__link-arrow {
+    fill: rgb(255,255,255);
+}
+
+
+/*Пагинация*/
+
+.pagination{
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: clamp(0.25rem, 0.068rem + 0.78vw, 1rem);
+}
+.pagination__arrows{
+    padding: clamp(0.844rem, 0.806rem + 0.16vw, 1rem) clamp(0.719rem, 0.271rem + 1.91vw, 2.563rem);
+    border: 2px solid rgb(132, 24, 68);
+    border-radius: 50px;
+}
+.pagination__arrows:hover {
+    background: rgb(132, 24, 68);
+}
+.pagination__arrow-svg {
+    width: 17px;
+    height: 13px;
+    fill: rgb(132, 24, 68);
+}
+.pagination__arrows:hover .pagination__arrow-svg {
+    fill: rgb(255,255,255);
+}
+.pagination__link{
+    padding: clamp(0.719rem, 0.681rem + 0.16vw, 0.875rem) clamp(0.719rem, 0.544rem + 0.74vw, 1.438rem);
+    color: rgb(132, 24, 68);
+    font-family: "OsSB";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    border: 2px solid rgb(132, 24, 68);
+    border-radius: 50px;
+}
+.pagination__link:hover {
+    color: rgb(255,255,255);
+    background: rgb(132, 24, 68);
+}
+.pagination__active{
+    padding: clamp(0.719rem, 0.681rem + 0.16vw, 0.875rem) clamp(0.719rem, 0.544rem + 0.74vw, 1.438rem);
+    color: rgb(255,255,255);
+    font-family: "OsSB";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    border: 2px solid rgb(132, 24, 68);
+    background: rgb(132, 24, 68);
+    border-radius: 50px;
+}
+.pagination__ellipsis{
+    align-self: flex-end;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(132, 24, 68);
+}
